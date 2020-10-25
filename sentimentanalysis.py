@@ -40,8 +40,8 @@ def get_tweets_for_model(cleaned_tokens_list):
 
 if __name__ == "__main__":
     
-    import nltk
-    nltk.download('twitter_samples')
+    #import nltk
+    #nltk.download('twitter_samples')
 
     positive_tweets = twitter_samples.strings('positive_tweets.json')
     negative_tweets = twitter_samples.strings('negative_tweets.json')
