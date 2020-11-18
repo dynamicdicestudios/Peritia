@@ -3,8 +3,12 @@ from tkinter import *
 import tkinter.scrolledtext as tkst
 import time, threading, random
 
+#import model
+#from model import model_response
+
 import detect_sentiments
 from detect_sentiments import analyse_sentiments
+
 
 """root = Tk()
 
@@ -39,9 +43,6 @@ Button.place(x=6, y=400, height=88)
 
 root.mainloop()"""
 
-sentiment = False
-discuss = True
-
 def greeting() -> str:
     t = time.localtime()
     current_hour = time.strftime("%H", t)
@@ -57,18 +58,7 @@ def greeting() -> str:
     return greeting
 
 def respond(message) -> str:
-    if "sentiment" in message.lower():
-        sentiment = True
-        discuss = False
-    else:
-        sentiment = False
-        discuss = True
-
-    if discuss:
-        return "Nice to hear that!"
-    else:
-        return "This message is " + analyse_sentiments(message).lower()
-        
+    return "This message is " + analyse_sentiments(message).lower()        
 
 window = Tk()
 
