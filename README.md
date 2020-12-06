@@ -1,4 +1,4 @@
-# dig-chatbot
+# Peritia
 Chatbot made for the Convergence.tech’s Digital Inclusion Challenge 2020. The Challenge was one week long.
 
 The project was to create a chatbot that would assist students in developing productive habits. The chatbot would give helpful strategies to the user to assist them in developing good habits. 
